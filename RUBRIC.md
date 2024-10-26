@@ -88,10 +88,18 @@ Your project will be evaluated based on the following criteria:
 - Provides a comprehensive explanation of the application architecture.
 - Details components, state management, and API interactions.
 
-### Following Instructions (10%)
+### Following Instructions (5%)
 
 - All the specified requirements and instructions are followed.
+- You do not improvise or deviate from the given tasks.
 - The application meets the objectives outlined in the challenge.
+
+### Version Control and Commit Structure (5%)
+
+- Commits are well-structured and follow a logical progression.
+- Commit messages are clear, concise, and descriptive.
+- Commits are made frequently, showing incremental progress.
+- Each commit represents a single, coherent change or feature.
 
 ### Delivery Speed
 

@@ -4,7 +4,7 @@
 
 As part of the Transparency in Coverage (TiC) regulations, health insurers are required to publish their allowed amounts monthly in a machine-readable format. This challenge involves building a React application that facilitates the generation of these Machine-Readable Files (MRFs) from a CSV file containing claims data.
 
-You will create an interface that allows users to upload, parse, validate, and approve claims data. The approved data will then be sent to a backend API to generate JSON MRF files, which will be stored on the server. Additionally, you will implement authentication for certain routes and expose a public page displaying the list of MRF files.
+You will create an interface that allows users to upload, parse, validate, and approve claims data. The approved data will then be sent to a backend API to generate JSON MRF files, which will be stored on the server on disk. Additionally, you will implement mock auth for certain routes and expose a public page displaying the list of MRF files.
 
 _Please look into the [RUBRIC.md](./RUBRIC.md) for our evaluation criteria_
 
@@ -13,7 +13,7 @@ _Please look into the [RUBRIC.md](./RUBRIC.md) for our evaluation criteria_
 - **Build a user-friendly interface** for uploading and managing claims data.
 - **Parse and validate** the uploaded CSV claims file.
 - **Present the data** to users for approval before processing.
-- **Interact with a backend API** to generate and store JSON MRF files.
+- **Interact with a simple backend API** to generate and store JSON MRF files.
 - **Fetch and display** the list of MRF files for each customer.
 - **Implement authentication** for secure routes using dummy auth.
 - **Expose a public page** displaying MRF files.
@@ -27,6 +27,10 @@ _Please look into the [RUBRIC.md](./RUBRIC.md) for our evaluation criteria_
 - **CSV Parsing**: [Papaparse](https://www.papaparse.com/) for parsing CSV files.
 - **Data Tables**: [AG Grid](https://www.ag-grid.com/) for displaying data in tables.
 - **Routing**: [React Router](https://reactrouter.com/) for handling routes.
+- **Schema Validation**: [Zod](https://zod.dev/) for validating claims data.
+- **API Interaction**: Use `fetch` or any other library for API calls.
+- **Authentication**: Implement dummy authentication for secure routes.
+- **Storage**: Store generated MRF files on the server in a local folder.
 
 ## Instructions
 
@@ -47,11 +51,12 @@ _Please look into the [RUBRIC.md](./RUBRIC.md) for our evaluation criteria_
 
 ### 3. Parse, Validate, and Present Claims Data
 
-- **Use Papaparse** to parse the input CSV file. A sample has been included under `data/sample.csv`
+- **Use Papaparse** to parse the input CSV file on the frontend. A sample has been included under `data/sample.csv`
 - **Validate the claims data** against a defined schema (you need to define a high-quality schema for the claims data).
 - **Handle parsing and validation errors** gracefully by informing the user of any issues.
 - **Present the parsed and validated data** to the user using AG Grid in a tabular format.
-- Allow the user to **approve, edit, or remove** individual claims before submission.
+- Allow the user to **approve** claims before submission.
+   - BONUS: Allow the user to **edit** or **remove** claims as well.
 
 ### 4. Interact with Backend API for JSON MRF Generation
 
@@ -66,9 +71,8 @@ _Please look into the [RUBRIC.md](./RUBRIC.md) for our evaluation criteria_
 
 - **Create an API endpoint** that fetches the list of generated MRF files for each customer.
 - **Display the list** on a page similar to [this example](https://mrf.mano.claims/EdisonHealth).
-- Use **React Router** to navigate between different pages in the application.
 
-### 6. Implement Authentication for Secure Routes
+### 6. Implement Dummy Auth for Secure Routes
 
 - **Implement dummy authentication** (e.g., a simple admin login) to protect routes that allow uploading and processing of claims data.
 - **Ensure that only authenticated users** can access these secure routes.

@@ -9,7 +9,7 @@ Your project will be evaluated based on the following criteria:
 - Users can upload a CSV file using the interface.
 - Appropriate feedback is provided upon file selection.
 
-#### 2. Parsing and Validation (10%)
+#### 2. Parsing and Validation (15%)
 
 - CSV files are correctly parsed using Papaparse.
 - Claims data is validated against the defined schema.
@@ -27,20 +27,10 @@ Your project will be evaluated based on the following criteria:
 - The API generates JSON MRF files and stores them.
 - API interaction is properly implemented (mocked if necessary).
 
-#### 5. Fetching and Displaying MRF Files (5%)
+#### 5. Fetching and Displaying MRF Files (10%)
 
 - The application fetches the list of MRF files from the API.
 - The list is displayed in a user-friendly manner.
-
-#### 6. Authentication Implementation (5%)
-
-- Secure routes are protected with dummy authentication.
-- Only authenticated users can access the upload and processing routes.
-
-#### 7. Public MRF Page (5%)
-
-- The MRF files page is publicly accessible without authentication.
-- The page is well-designed and user-friendly.
 
 ### Code Quality (20%)
 

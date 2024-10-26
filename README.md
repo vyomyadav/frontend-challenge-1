@@ -102,7 +102,7 @@ _Please look into the [RUBRIC.md](./RUBRIC.md) for our evaluation criteria_
 
 ## Submission Guidelines
 
-- **Provide a forked Stackblitz repository link** containing your project.
+- **Provide a forked repository link** containing your project. Make sure it is public or add @mihilmy as a collaborator.
 - Include a **`README.md`** file with clear instructions on how to set up and run your application locally.
 - Ensure all dependencies are listed, and any setup scripts or configuration files are included.
 - Your code should be **well-organized** and **easy to navigate**.

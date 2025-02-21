@@ -87,7 +87,7 @@ Remember, this challenge is as much about how you approach problem-solving and m
 ### 5. Fetch and Display List of MRF Files
 
 - **Create an API endpoint** that fetches the list of generated MRF files for each customer.
-- **Display the list** on a page similar to [this example](https://mrf.mano.claims/EdisonHealth).
+- **Display the list** on a page similar to [this example](https://my.clearesthealth.com/mrf/ehs).
 - **Create a public page** that displays the list of MRF files fetched from the API.
 
 ### 6. Application Design Documentation

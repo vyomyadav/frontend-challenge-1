@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import BasicLayout from "./layout/BasicLayout";
 import NotFoundPage from "./pages/error/NotFound";
-import MainPage from "./pages/index";
+import { UploadPage } from './pages/UploadPage';
+import { PublicMrfPage } from './pages/PublicMrfPage';
 
 const router = createBrowserRouter([
   {
@@ -9,7 +10,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <MainPage />,
+        element: <UploadPage />,
+      },
+      {
+        path: '/mrf',
+        element: <PublicMrfPage />,
       },
     ],
     errorElement: <NotFoundPage />,
